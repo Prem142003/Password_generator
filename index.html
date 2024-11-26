@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="container">
+           <h1>password generator</h1>
+           <!-- display which will contain value of password  -->
+           <div class="display-container">
+            <input type="text" placeholder="password" class="display" data-password-display>
+            <button data-copy>
+                 <img src="copy.svg" alt="img" height="23" width="23">
+            </button>
+           </div>
+
+           <!-- input container -->
+
+           <div class="input-container">
+            <div class="length-container">
+                <p>password length</p>
+                 <p data-lengthnumber>0</p>
+            </div>
+
+          <!-- slider  -->
+          <input type="range" min="1" max="20" class="slider" step="1" data-length-slider  >
+            <div class="check">
+                <input type="checkbox" name="" id="uppercase">
+                <label for="uppercase">include uppercase letter </label>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" name="" id="lowercase">
+                <label for="lowercase"> include lowercase letter </label>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" name="" id="number">
+                <label for="number"> include number</label>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="symbol">
+                <label for="symbol"> include symbol </label>
+            </div>
+
+            <button class="generate-password-button"> generate password </button>
+           </div>
+
+     </div> 
+     
+     <p class="prem"></p>
+     
+     <script src="script.js"></script>
+</body>
+</html>
